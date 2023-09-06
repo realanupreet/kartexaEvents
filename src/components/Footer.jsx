@@ -18,7 +18,7 @@ const Footer = () => {
                         Unlock Memorable Experiences
                     </h1>
                 </div>
-                <div className="flex justify-around w-[80vw]">
+                <div className="flex flex-wrap justify-around w-[80vw]">
                     {/* links */ }
                     <div className="flex flex-col">
                         <Link>About Us</Link>
@@ -30,7 +30,7 @@ const Footer = () => {
                         <Link>Privacy Policy</Link>
                     </div>
                     {/* newsletter  */ }
-                    <div className="">
+                    <div className="my-4">
                         <h2>Get our newsletter</h2>
                         <div className="btn mt-3">
                             <input type="text" placeholder='Your email id please' className='bg-transparent p-3 ' />

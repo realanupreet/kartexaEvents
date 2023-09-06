@@ -50,7 +50,7 @@ const Header = () => {
                     <nav>
                         <Nav />
                     </nav>
-                    <div className="flex justify-evenly items-center mt-[30vh]">
+                    <div className="flex justify-evenly items-center mt-[15vh] md:mt-[30vh]">
                         <div className=""></div>
                         <div className=" flex flex-col items-center">
                             <h1 className="h1 text-5xl font-bold ">

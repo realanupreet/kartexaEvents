@@ -59,29 +59,29 @@ const BoilerPlate = ({ title, subtitle, event, learn, audience, instructor, even
             <h1>{ subtitle }</h1> */}
                 <Carousel events={ events } />
                 <Common t="Event Information/ Facilities" content={ event } />
-                <img src={ E1 } alt="" className='mr-0 m-auto mt-[-12em]' />
+                <img src={ E1 } alt="" className='mr-0 m-auto w-48 md:w-auto mt-[-1em] md:mt-[-12em]' />
                 {
                     learn != "" &&
                     // console.log(learn)
                     < Common t="What You wil Learn" content={ learn } />
                 }
                 <Common t="Target Audience" content={ audience } />
-                <img src={ E2 } alt="" className='mt-[-8em] w-40' />
+                <img src={ E2 } alt="" className='mt-[-2em] md:mt-[-8em] w-40' />
                 {/* Icons */ }
-                <div className="flex justify-around mt-7">
-                    <div className="text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
+                <div className="flex  flex-wrap md:flex-row justify-around mt-7">
+                    <div className="mt-4 m-auto text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
                         <img src={ IC1 } alt="" />
                         <h2 >Parking</h2>
                     </div>
-                    <div className="text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
+                    <div className="mt-4 m-auto text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
                         <img src={ IC2 } alt="" />
                         <h2>Cafes</h2>
                     </div>
-                    <div className="text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
+                    <div className="mt-4 m-auto text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
                         <img src={ IC3 } alt="" />
                         <h2>Gaming Zone</h2>
                     </div>
-                    <div className="text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
+                    <div className="mt-4 m-auto text-black font-bold text-2xl flex flex-col bg-blue w-36 h-48 rounded-2xl p-4 bg-gradient-to-b from-[#D029EB] to-[#F40E8A]">
                         <img src={ IC4 } alt="" />
                         <h2>Park</h2>
                     </div>
@@ -89,15 +89,15 @@ const BoilerPlate = ({ title, subtitle, event, learn, audience, instructor, even
                 </div>
                 <img src={ L } alt="" className='m-4' />
                 {/* Instructor */ }
-                <div className="flex text-left mt-20 bg-white p-4 rounded-2xl text-black text-2xl font-bold justify-center">
+                <div className="flex flex-wrap text-left mt-20 bg-white p-4 rounded-2xl text-black text-2xl font-bold justify-center">
                     <img src={ i } alt="" className='w-72' />
-                    <div className="p-8">
+                    <div className="p-4 md:p-8">
                         <h1 className='text-3xl m-3 text-center'>Instructor</h1>
-                        <p className='text-xl w-[50vw]'>{ instructor }</p>
+                        <p className='text-xl md:w-[50vw]'>{ instructor }</p>
                     </div>
                 </div>
                 {/* Pricing */ }
-                <div className="text-black text-left w-[70vw] p-6 bg-gradient-to-b from-[#CC0BFD] to-[#F10EB1] m-auto my-8 text-2xl rounded-2xl">
+                <div className="text-black text-left w-[80vw] md:w-[70vw] p-6 bg-gradient-to-b from-[#CC0BFD] to-[#F10EB1] m-auto my-8 text-2xl rounded-2xl">
                     <h1 className='font-bold'>Pricing</h1>
                     <div className="mt-6"></div>
                     <p>- Single Registration: $60 per person
@@ -115,10 +115,10 @@ const BoilerPlate = ({ title, subtitle, event, learn, audience, instructor, even
                 </div>
                 {/* Sponsors */ }
                 <h1 className='text-3xl font-bold' >Sponsors</h1>
-                <div className="flex justify-around p-6">
-                    <img src={ S1 } alt="" className='w-80' />
-                    <img src={ S2 } alt="" className='w-80' />
-                    <img src={ S3 } alt="" className='w-80' />
+                <div className="flex justify-around p-6 flex-wrap">
+                    <img src={ S1 } alt="" className='w-80 m-3' />
+                    <img src={ S2 } alt="" className='w-80 m-3' />
+                    <img src={ S3 } alt="" className='w-80 m-3' />
                 </div>
                 <img src={ L } alt="" className='m-4' />
                 {/* Contact */ }

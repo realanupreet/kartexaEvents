@@ -37,6 +37,7 @@ import I1 from './assets/i1.png'
 import I2 from './assets/i2.png'
 import I3 from './assets/i3.png'
 import I4 from './assets/i4.png'
+import Footer from './components/Footer';
 
 
 
@@ -123,7 +124,7 @@ const router = createBrowserRouter([
         />,
       },
       {
-        path: "",
+        path: "strategic",
         element: <BoilerPlate
           title="startegic planning"
           subtitle=""
@@ -173,6 +174,13 @@ const router = createBrowserRouter([
     path: "*",
     element: <h1>Go somewhere else</h1>,
   },
+  {
+    path: "/education",
+    element: <>
+      <h1>Go somewhere else</h1>,
+      <Footer />
+    </>
+  }
 ]);
 
 
