@@ -7,7 +7,7 @@ const Carousel = ({ events }) => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row md:m-8">
+      <div className="flex flex-col md:flex-row flex-wrap md:m-8">
         { events.map((event, index) => (
           <div className="m-4" key={ index } >
             <div className='bg-white  w-[70vw] sm:w-max md:w-[20vw] items-center m-auto text-black font-bold rounded-b-xl pb-4'>

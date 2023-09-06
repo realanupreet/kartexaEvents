@@ -37,7 +37,8 @@ import I1 from './assets/i1.png'
 import I2 from './assets/i2.png'
 import I3 from './assets/i3.png'
 import I4 from './assets/i4.png'
-import Footer from './components/Footer';
+import Education from './routes/Education';
+import Business from './routes/Business';
 
 
 
@@ -177,9 +178,13 @@ const router = createBrowserRouter([
   {
     path: "/education",
     element: <>
-      <h1>Go somewhere else</h1>,
-      <Footer />
+
+      <Education />
     </>
+  },
+  {
+    path: "/business",
+    element: <Business />
   }
 ]);
 
